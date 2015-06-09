@@ -48,6 +48,13 @@ var domains = {
     "nicovideo.jp": 1,
     "vimeo.com": 1,
 
+    // blog
+    "fanyue.info": 1,
+    "blogger.com": 1,
+    "wordpress.com": 1,
+    "wp.com": 1,
+    "gravatar.com": 1,
+
     // other app
     "dropbox.com": 1,
     "feedly.com": 1,
@@ -68,16 +75,23 @@ var domains = {
     "wikimedia": 1,
     "w.wiki": 1,
 
+    // tech
+    "amazonaws.com": 1, // => aws.amazon.com, AWS
+    "appspot.com": 1, // => appengine.google.com
+    "golang.org": 1,
+    "github.com": 1,
+    "angularjs.org": 1,
+
     // about gfw
     "whatblocked.com": 1,
     "getfoxyproxy.org": 1,
+    "hikinggfw.org": 1,
+    "greatfire.org": 1,
+    "ifanqiang.com": 1,
+    "feedburner.com": 1,
 
     // etc
-    "gamer.com.tw": 1,
-    "amazonaws.com": 1,
-    "github.com": 1,
-    "thepiratebay.org": 1,
-    "appspot.com": 1,
+    "thepiratebay.org": 1  // 海盗湾
 };
 
 var hasOwnProperty = Object.hasOwnProperty;
