@@ -3,3 +3,7 @@
 Session.vim
 .netrwhist
 *~
+
+# Shadowsocks(Windows GUI)
+resources/gui-config.json
+resources/user-rule.txt
