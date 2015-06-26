@@ -81,6 +81,7 @@ var domains = {
     "golang.org": 1,
     "github.com": 1,
     "angularjs.org": 1,
+    "sourceforge.net": 1,
 
     // about gfw
     "whatblocked.com": 1,
@@ -89,6 +90,8 @@ var domains = {
     "greatfire.org": 1,
     "ifanqiang.com": 1,
     "feedburner.com": 1,
+    "goagentplus.com": 1,
+    "shadowsocks.org": 1,
 
     // etc
     "thepiratebay.org": 1  // 海盗湾
