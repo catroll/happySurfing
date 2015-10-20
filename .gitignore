@@ -4,6 +4,9 @@ Session.vim
 .netrwhist
 *~
 
+# TortoiseGit
+.tgitconfig
+
 # Shadowsocks(Windows GUI)
 resources/gui-config.json
 resources/user-rule.txt
