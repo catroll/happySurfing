@@ -16,7 +16,7 @@
   },
   "StatisticsEnabled": true,
   "ByHourOfDay": true,
-  "Ping": false,
+  "Ping": true,
   "ChoiceKeptMinutes": 10,
   "DataCollectionMinutes": 10,
   "RepeatTimesNum": 4
