@@ -8,5 +8,6 @@ Session.vim
 .tgitconfig
 
 # Shadowsocks(Windows GUI)
-resources/gui-config.json
-resources/user-rule.txt
+/resources/gui-config.json
+/resources/user-rule.txt
+/resources/temp/
