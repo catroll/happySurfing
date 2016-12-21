@@ -11,3 +11,7 @@ Session.vim
 /resources/gui-config.json
 /resources/user-rule.txt
 /resources/temp/
+
+# GitBook
+_book/
+
