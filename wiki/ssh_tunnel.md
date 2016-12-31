@@ -1,9 +1,9 @@
-# Ê¹ÓÃ SSH ËíµÀ¼¼Êõ×ö´úÀí
+# ä½¿ç”¨ SSH éš§é“æŠ€æœ¯åšä»£ç†
 
-¹ØÓÚ SSH ×ª·¢²Î¿¼£º
+å…³äº SSH è½¬å‘å‚è€ƒï¼š
 
-- [IBM ¼¼ÊõÎÄµµ - ÊµÕ½ SSH ¶Ë¿Ú×ª·¢](http://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/)
-- [Î¬»ù°Ù¿Æ - ËíµÀĞ­Òé](https://zh.wikipedia.org/zh-hans/ËíµÀĞ­Òé)
+- [IBM æŠ€æœ¯æ–‡æ¡£ - å®æˆ˜ SSH ç«¯å£è½¬å‘](http://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/)
+- [ç»´åŸºç™¾ç§‘ - éš§é“åè®®](https://zh.wikipedia.org/zh-hans/éš§é“åè®®)
 
 http://blog.csdn.net/zenghui08/article/details/7896520
 http://blog.csdn.net/xanxus46/article/details/38942215
