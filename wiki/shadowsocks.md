@@ -1,4 +1,4 @@
-## ShadowSocks
+# ShadowSocks
 
 官网：http://shadowsocks.org/en/index.html
 Github：https://github.com/shadowsocks/
@@ -12,7 +12,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 - shadowsocks-python 项目 [wiki](https://github.com/shadowsocks/shadowsocks/wiki)
 	上面说明够细致了，翻出去之后可以看一看。
 
-#### 一、安装
+## 一、安装
 
 - 通过 PIP 安装
 
@@ -28,7 +28,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
     $ python setup.py
     ```
 
-#### 二、配置
+## 二、配置
 
 **1. `/etc/shadowsocks.json`**
 
@@ -59,13 +59,13 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 - `timeout`: 数值，通讯超时时间，单位是秒，默认是 `300`。
 - `method`: 字符串（大小写不敏感），加密方法，默认是 `AES-256-CFB`。
     查看所有支持的方法：
-    
+
     ```python
     > import shadowsocks.encrypt
     > print sorted(shadowsocks.encrypt.method_supported.keys())
     ['aes-128-cfb', 'aes-128-cfb1', 'aes-128-cfb8', 'aes-128-ctr', 'aes-128-ofb', 'aes-192-cfb', 'aes-192-cfb1', 'aes-192-cfb8', 'aes-192-ctr', 'aes-192-ofb', 'aes-256-cfb', 'aes-256-cfb1', 'aes-256-cfb8', 'aes-256-ctr', 'aes-256-ofb', 'bf-cfb', 'camellia-128-cfb', 'camellia-192-cfb', 'camellia-256-cfb', 'cast5-cfb', 'chacha20', 'des-cfb', 'idea-cfb', 'rc2-cfb', 'rc4', 'rc4-md5', 'salsa20', 'salsa20-ctr', 'seed-cfb', 'table']
     ```
-    
+
     其中 `rc4` 和 `table` 是两种不安全的加密方法，不推荐使用。
     如果使用的加密方法不支持，可能需要安装额外的包，例如：`apt-get install python-m2crypto`。
 - `verbose`：数值，标识记录日志的级别。
@@ -85,7 +85,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 
 然后局域网小伙伴们的 shadowsocks 设置中，`server` 这一项应该是你的局域网 IP 地址。
 
-#### 三、启动
+## 三、启动
 
 **1. 服务器端**
 
@@ -103,12 +103,12 @@ nohup sslocal -c /etc/shadowsocks.json 1>/var/log/shadowsocks/client.log 2>&1 &
 
 我使用的这种方法，避免万一服务挂了需要手动重启服务。但是涉及另一个模块的用法，一两句说不清，不再这里累赘。
 
-#### 四、Windows GUI 客户端
+## 四、Windows GUI 客户端
 
 Windows 下有图形化客户端可以使用，我看使用 Windows 的同事用过，还可以，提两句。
 
-官方提供的下载地址：`http://sourceforge.net/projects/shadowsocksgui/files/dist/`，当前最新版是 2.3.1（[下载](http://sourceforge.net/projects/shadowsocksgui/files/dist/Shadowsocks-win-2.3.1.zip/download)）。
+~~官方提供的下载地址：`http://sourceforge.net/projects/shadowsocksgui/files/dist/`，当前最新版是 2.3.1（[下载](http://sourceforge.net/projects/shadowsocksgui/files/dist/Shadowsocks-win-2.3.1.zip/download)）。~~
 
-上面的 SF 下载链接可能被屏蔽，所以，该库的 `resources` 目录中放了一个最新版本，文件名为 `shadowsocks.exe`（[点击下载](/catroll/gfw/raw/master/resources/Shadowsocks.exe)）。
+官方提供的下载地址：https://github.com/shadowsocks/shadowsocks-windows/releases
 
-
+该库的 `resources` 目录中也备份了一个最新版本，文件名为 `shadowsocks.exe`（[点击下载](/catroll/gfw/raw/master/resources/Shadowsocks.exe)）。
