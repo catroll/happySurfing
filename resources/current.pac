@@ -1,10 +1,13 @@
 var proxy = "SOCKS5 127.0.0.1:1080";
 var direct = 'DIRECT';
 var domains = {
+    "mymyc.com": 1,
     // twitter
     "twitter.com": 1,
     "twimg.com": 1,
     "t.co": 1,
+    "pornhub.com": 1,
+    "hashicorp.com": 1,
 
     // meida
     "bbc.com": 1,
@@ -80,8 +83,8 @@ var domains = {
     "appspot.com": 1, // => appengine.google.com
     "golang.org": 1,
     "github.com": 1,
-    "angularjs.org": 1,
     "sourceforge.net": 1,
+    "angularjs.org": 1,
 
     // about gfw
     "whatblocked.com": 1,
@@ -90,6 +93,7 @@ var domains = {
     "greatfire.org": 1,
     "ifanqiang.com": 1,
     "feedburner.com": 1,
+    "shadowsocks.org": 1,
     "goagentplus.com": 1,
     "shadowsocks.org": 1,
 
