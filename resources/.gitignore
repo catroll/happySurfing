@@ -1,0 +1,9 @@
+# Shadowsocks(Windows GUI)
+gui-config.json
+user-rule.txt
+user-wininet.json
+ss_win_temp/
+temp/
+
+# ss-qt5
+config.ini
