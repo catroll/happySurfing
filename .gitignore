@@ -6,14 +6,3 @@ Session.vim
 
 # TortoiseGit
 .tgitconfig
-
-# Shadowsocks(Windows GUI)
-/resources/gui-config.json
-/resources/user-rule.txt
-/resources/user-wininet.json
-/resources/ss_win_temp/
-/resources/temp/
-
-# GitBook
-_book/
-
