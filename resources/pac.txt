@@ -1230,6 +1230,7 @@ var rules = [
   "||urchin.com",
   "||waveprotocol.org",
   "||waymo.com",
+  "||web.dev",
   "||webmproject.org",
   "||webrtc.org",
   "||whatbrowser.org",
