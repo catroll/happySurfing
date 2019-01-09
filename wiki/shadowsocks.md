@@ -34,16 +34,16 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 
 ```js
 {
-    "server": "0.0.0.0",
+    "server": "my_host",
     "server_port": 8388,
-    "local_address": "127.0.0.1",
+    "local_address": "0.0.0.0",
     "local_port": 1080,
     "password": "my_password",
     "timeout": 300,
     "method": "aes-256-cfb",
     "verbose": 0,
     "fast_open": false,
-    "workers": 1,
+    "workers": 1
 }
 ```
 
