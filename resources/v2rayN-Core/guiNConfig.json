@@ -7,8 +7,8 @@
       "sniffingEnabled": true
     }
   ],
-  "logEnabled": false,
-  "loglevel": "warning",
+  "logEnabled": true,
+  "loglevel": "debug",
   "index": -1,
   "vmess": [],
   "muxEnabled": true,
@@ -26,14 +26,14 @@
     "readBufferSize": 2,
     "writeBufferSize": 2
   },
-  "sysAgentEnabled": false,
-  "listenerType": 0,
-  "urlGFWList": null,
-  "allowLANConn": false,
-  "enableStatistics": false,
-  "statisticsFreshRate": 2000,
+  "sysAgentEnabled": true,
+  "listenerType": 1,
+  "urlGFWList": "",
+  "allowLANConn": true,
+  "enableStatistics": true,
+  "statisticsFreshRate": 1000,
   "CacheDays": 7,
-  "remoteDNS": null,
+  "remoteDNS": "",
   "subItem": [],
   "uiItem": {
     "mainQRCodeWidth": 600
