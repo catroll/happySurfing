@@ -4,5 +4,9 @@ Session.vim
 .netrwhist
 *~
 
+*.backup.*
+*.backup
+*.bak
+
 # TortoiseGit
 .tgitconfig
