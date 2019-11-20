@@ -4,6 +4,8 @@ Session.vim
 .netrwhist
 *~
 
+*.log
+
 *.backup.*
 *.backup
 *.bak
