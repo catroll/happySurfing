@@ -1,7 +1,7 @@
 # ShadowSocks
 
-官网：http://shadowsocks.org/en/index.html
-Github：https://github.com/shadowsocks/
+官网：<http://shadowsocks.org/en/index.html>
+Github：<https://github.com/shadowsocks/>
 
 ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](https://github.com/clowwindy) 同志发起开源项目 **[shadowsocks-python](https://github.com/shadowsocks/shadowsocks)**（基于 Apache 协议 2.0），同时包括服务器端和括客户端，操作简单，且各平台通用。
 
@@ -9,28 +9,28 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 
 - ShadowSocks [服务器](http://shadowsocks.org/en/download/servers.html)
 - ShadowSocks [客户端](http://shadowsocks.org/en/download/clients.html)
-- shadowsocks-python 项目 [wiki](https://github.com/shadowsocks/shadowsocks/wiki)
-	上面说明够细致了，翻出去之后可以看一看。
+- shadowsocks-python 项目 [wiki](https://github.com/shadowsocks/shadowsocks/wiki)  
+  上面说明够细致了，翻出去之后可以看一看。
 
 ## 一、安装
 
 - 通过 PIP 安装
 
-    ```bash
-    $ pip install shadowsocks
+    ```sh
+    pip install shadowsocks
     ```
 
 - 通过 GitHub 下载源码安装
 
-    ```bash
-    $ git clone https://github.com/shadowsocks/shadowsocks.git
-    $ cd shadowsocks
-    $ python setup.py
+    ```sh
+    git clone https://github.com/shadowsocks/shadowsocks.git
+    cd shadowsocks
+    python setup.py
     ```
 
 ## 二、配置
 
-**1. `/etc/shadowsocks.json`**
+### 1. `/etc/shadowsocks.json`
 
 ```js
 {
@@ -47,7 +47,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 }
 ```
 
-**2. 配置项说明**
+### 2. 配置项说明
 
 - `server`: 字符串，服务器端主机名或 IP 地址，默认是 `0.0.0.0`。
 - `server_port`: 数值，服务器端端口号，默认是 `8388`。
@@ -71,7 +71,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 - `verbose`：数值，标识记录日志的级别。
     参见：`/usr/local/lib/python2.7/dist-packages/shadowsocks/utils.py`
 - `fast_open`：布尔值，是否使用 TFO（TCP Fast Open）特性。
-    参见：http://en.wikipedia.org/wiki/TCP_Fast_Open
+    参见：<http://en.wikipedia.org/wiki/TCP_Fast_Open>
 - `workers`：数值，进程数，默认为 1，即使用单进程模式。
 
 说明：
@@ -79,7 +79,7 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 1. 上述配置文件只是为了说明支持的配置项，并不是每项都必须，比如，纯服务器端不需要 `local_address` 字段。而且，服务器端使用默认配置就够了，然后相应地，客户端只用设置服务器端地址。
 2. 配置文件需要手动创建，如果使用配置文件启动。
 
-**3. 分享给局域网内的其他用户**
+### 3. 分享给局域网内的其他用户
 
 你的 shadowsocks 应该绑定到 IP 上，也就是说 `local_address` 应该是 `0.0.0.0`。
 
@@ -87,19 +87,19 @@ ShadowSocks 有不同的服务器端和客户端，我使用的是 [@clowwindy](
 
 ## 三、启动
 
-**1. 服务器端**
+### 1. 服务器端
 
-```bash
+```sh
 nohup ssserver -c /etc/shadowsocks.json 1>/var/log/shadowsocks/server.log 2>&1 &
 ```
 
-**2. 客户端**
+### 2. 客户端
 
-```bash
+```sh
 nohup sslocal -c /etc/shadowsocks.json 1>/var/log/shadowsocks/client.log 2>&1 &
 ```
 
-**3. supervistor**
+### 3. supervistor
 
 我使用的这种方法，避免万一服务挂了需要手动重启服务。但是涉及另一个模块的用法，一两句说不清，不再这里累赘。
 
@@ -109,6 +109,6 @@ Windows 下有图形化客户端可以使用，我看使用 Windows 的同事用
 
 ~~官方提供的下载地址：`http://sourceforge.net/projects/shadowsocksgui/files/dist/`，当前最新版是 2.3.1（[下载](http://sourceforge.net/projects/shadowsocksgui/files/dist/Shadowsocks-win-2.3.1.zip/download)）。~~
 
-官方提供的下载地址：https://github.com/shadowsocks/shadowsocks-windows/releases
+官方提供的下载地址：<https://github.com/shadowsocks/shadowsocks-windows/releases>
 
 该库的 `resources` 目录中也备份了一个最新版本，文件名为 `shadowsocks.exe`（[点击下载](/catroll/gfw/raw/master/resources/Shadowsocks.exe)）。
